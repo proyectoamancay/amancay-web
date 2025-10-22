@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amancay - Acompañamiento Institucional</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Nunito:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde-claro: #4AB860;
+      --verde-oscuro: #388A48;
+      --amarillo-brillante: #FCBD03;
+      --amarillo-calmado: #FFD207;
+      --marron: #7E5F02;
+      --crema: #FFF8E5;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Alegreya', serif;
+      color: var(--marron);
+      background-color: var(--crema);
+      background-image: url("images/fondoWebAmancay.png");
+      background-repeat: repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    h2, h3 {
+      font-family: 'Nunito', sans-serif;
+      color: var(--verde-oscuro);
+      text-align: center;
+      line-height: 1.1em;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1.1em;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255,248,229,0.9);
+      border-radius: 15px;
+      margin: 40px auto 20px;
+      max-width: 900px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    header img {
+      display: block;
+      margin: 0 auto 25px auto;
+      width: 400px;
+      max-width: 40vw;
+      height: auto;
+      transition: all 0.3s ease;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+      text-align: center;
+      max-width: 600px;
+      line-height: 1.1em;
+    }
+
+    .btn {
+      background-color: var(--verde-claro);
+      color: white;
+      padding: 14px 30px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-family: 'Nunito', sans-serif;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--amarillo-brillante);
+    }
+
+    @media (max-width: 1024px) {
+      header img {
+        width: 220px;
+        max-width: 55vw;
+      }
+      header p {
+        font-size: 1.2em;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 70px 20px 60px;
+      }
+      header img {
+        width: 200px;
+        max-width: 70vw;
+      }
+      header p {
+        font-size: 0.9em;
+      }
+    }
+
+    section {
+      padding: 60px 20px;
+      background-color: rgba(255,248,229,0.95);
+      margin: 0 auto 40px;
+      max-width: 900px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .servicios {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .servicio {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 260px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .servicio:hover {
+      transform: scale(1.02);
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .galeria img {
+      width: 260px;
+      border-radius: 10px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 30px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 2px solid var(--verde-oscuro);
+      border-radius: 5px;
+      font-size: 1em;
+      width: 100%;
+      box-sizing: border-box;
+      font-family: 'Alegreya', serif;
+    }
+
+    button {
+      background-color: var(--verde-claro);
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: 'Nunito', sans-serif;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: var(--amarillo-brillante);
+    }
+
+    /* Botón base */
+    .btn {
+      padding: 12px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    /* WhatsApp */
+    .wp-btn {
+      background-color: #4AB860;
+      color: #fff;
+    }
+    .wp-btn:hover {
+      background-color: #388A48;
+    }
+
+    /* Correo */
+    .mail-btn:hover {
+      background-color: #4AB860; /* el verde */
+      color: #FFD207; /* el amarillo */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logoAmancay.png" alt="Amancay - Acompañamiento Institucional">
+    <p>Acompañamos a organizaciones a florecer según sus valores</p>
+    <a href="https://wa.me/5493412811892?text=Hola%20Amancay!%20Quisiera%20saber%20m%C3%A1s%20sobre%20su%20proyecto." 
+   class="btn" target="_blank">
+  Contáctanos
+</a>
+
+  </header>
+
+  <section id="sobre-nosotros">
+    <h2>Quiénes somos</h2>
+    <p>Amancay es un proyecto de acompañamiento institucional que busca fortalecer organizaciones, escuelas y empresas para que desarrollen su mejor versión, respetando sus valores y promoviendo la participación.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Qué hacemos</h2>
+    <div class="servicios">
+      <div class="servicio">
+        <h3>Acompañamiento institucional</h3>
+        <p>Apoyamos a organizaciones en la mejora continua y fortalecimiento de sus procesos.</p>
+      </div>
+      <div class="servicio">
+        <h3>Talleres y capacitaciones</h3>
+        <p>Diseñamos experiencias participativas para equipos y comunidades.</p>
+      </div>
+      <div class="servicio">
+        <h3>Herramientas de autoevaluación</h3>
+        <p>Recursos prácticos para medir avances y consolidar aprendizajes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--
+<section id="testimonios">
+  <h2>Experiencias de quienes nos acompañaron</h2>
+  
+  <div class="servicios" style="justify-content:center; gap:20px; flex-wrap:wrap; margin-top:30px;">
+    
+    <div class="servicio">
+      <p>“El taller me ayudó a mejorar la dinámica de nuestro equipo y comprender mejor los valores de la institución.”</p>
+      <h4>María P., docente</h4>
+    </div>
+    
+    <div class="servicio">
+      <p>“Aprendimos herramientas prácticas que aplicamos inmediatamente en nuestras actividades diarias.”</p>
+      <h4>Juan L., coordinador</h4>
+    </div>
+    
+    <div class="servicio">
+      <p>“La experiencia fue enriquecedora y motivadora para todo el equipo.”</p>
+      <h4>Ana R., docente</h4>
+    </div>
+    
+  </div>
+</section>
+-->
+
+
+  <section id="contacto">
+  <h2>Hablemos</h2>
+  
+  <div style="text-align:center; margin-top:30px; display:flex; flex-direction:column; align-items:center; gap:20px;">
+    
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/5493412811892?text=Hola%20Amancay!%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20acompa%C3%B1amientos." 
+       class="btn wp-btn" target="_blank"
+       style="display:flex; align-items:center; justify-content:center; gap:10px; font-size:1.1em; width:220px;">
+      💬 WhatsApp
+    </a>
+
+    <!-- Botón de Correo -->
+    <a href="mailto:amancay801@gmail.com" 
+       class="btn mail-btn" 
+       style="display:flex; align-items:center; justify-content:center; gap:10px; background-color:#FCBD03; color:#7E5F02; font-size:1.1em; width:220px;">
+      ✉️ Correo
+    </a>
+
+    </div>
+</section>
+
+
+
+
+
+</body>
+</html>
