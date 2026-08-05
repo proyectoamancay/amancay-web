@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <title>Amancay - Acompañamiento Institucional</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Nunito:wght@700&display=swap" rel="stylesheet">
@@ -211,12 +212,44 @@
       background-color: #4AB860; /* el verde */
       color: #FFD207; /* el amarillo */
     }
+    /* ===========================
+   SECCIÓN REDES SOCIALES
+=========================== */
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.redes-sociales a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--verde-claro);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.redes-sociales a:hover {
+  background: var(--amarillo-brillante);
+  color: var(--marron);
+  transform: translateY(-4px) scale(1.08);
+}
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logoAmancay.png" alt="Amancay - Acompañamiento Institucional">
+    <img src="images/logoAmancay.png" alt="Amancay - Acompañamiento Institucional">
     <p>Acompañamos a organizaciones a florecer según sus valores</p>
     <a href="https://wa.me/5493415470122?text=Hola%20Amancay!%20Quisiera%20saber%20m%C3%A1s%20sobre%20su%20proyecto." 
    class="btn" target="_blank">
@@ -292,11 +325,55 @@
        style="display:flex; align-items:center; justify-content:center; gap:10px; background-color:#FCBD03; color:#7E5F02; font-size:1.1em; width:220px;">
       ✉️ Correo
     </a>
+    
 
     </div>
 </section>
 
+<section id="seguinos">
+  <h2>Seguinos</h2>
 
+  <div class="redes-sociales">
+
+    <a href="https://www.instagram.com/amancay801"
+       target="_blank"
+       aria-label="Instagram"
+       title="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.youtube.com/@amancay801"
+       target="_blank"
+       aria-label="YouTube"
+       title="YouTube">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+
+  <!--    
+    <a href="https://linkedin.com/company/USUARIO"
+       target="_blank"
+       aria-label="LinkedIn"
+       title="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@USUARIO"
+       target="_blank"
+       aria-label="TikTok"
+       title="TikTok">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+
+    <a href="https://substack.com/@USUARIO"
+       target="_blank"
+       aria-label="Substack"
+       title="Substack">
+      <i class="fa-solid fa-newspaper"></i>
+    </a>
+-->
+
+  </div>
+</section>
 
 
 
